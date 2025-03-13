@@ -1,8 +1,8 @@
 def select_fruit(dict):
     result = {}
-    for key in dict:
-        if dict[key] == "Fruit":
-            result[key] = dict[key]
+    for curr_key, curr_value in dict.items():
+        if curr_value == "Fruit":
+            result[curr_key] = curr_value
     return result
 
 produce = {
