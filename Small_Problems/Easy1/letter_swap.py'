@@ -1,0 +1,16 @@
+def swap_chars(word):
+    swapped_word = word[len(word) - 1] + word[1:len(word) - 1] + word[0]
+    return swapped_word
+
+def swap(str):
+    result = ""
+    words = str.split()
+    for word in words:
+        result += swap_chars(word) + " "
+    print(result)
+    return result[0:len(result) - 1]
+
+print(swap('Oh what a wonderful day it is')
+      == "hO thaw a londerfuw yad ti si")  # True
+print(swap('Abcde') == "ebcdA")            # True
+print(swap('a') == "a")                    # True
